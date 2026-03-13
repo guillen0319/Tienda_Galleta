@@ -101,9 +101,9 @@ margin-top:10px;
 
 <div class="menu">
 <a href="/galletas">Inventario</a>
-<a href="#">Ventas</a>
-<a href="#">Créditos</a>
-<a href="#">Reporte Diario</a>
+<a href="/ventas">Ventas</a>
+<a href="/creditos">Créditos</a>
+<a href="/reportes">Reporte Diario</a>
 </div>
 
 <div class="container">
@@ -123,17 +123,18 @@ Administra inventario, ventas y pagos de CapyCrunch
 <p>Gestionar galletas</p>
 </a>
 
-<a class="card" href="#">
+<a class="card" href="/ventas">
 <h3>🧾 Ventas</h3>
 <p>Registrar ventas</p>
 </a>
 
-<a class="card" href="#">
+
+<a class="card" href="/creditos">
 <h3>💳 Créditos</h3>
 <p>Pagos pendientes</p>
 </a>
 
-<a class="card" href="#">
+<a class="card" href="/reportes">
 <h3>📊 Reportes</h3>
 <p>Ventas del día</p>
 </a>

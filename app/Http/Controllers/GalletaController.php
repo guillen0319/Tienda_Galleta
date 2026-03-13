@@ -21,7 +21,8 @@ class GalletaController extends Controller
     public function store(Request $request)
     {
         Galleta::create($request->all());
-        return redirect('/galletas');
+
+        return redirect()->route('galletas.index');
     }
 
     public function edit($id)
@@ -34,13 +35,14 @@ class GalletaController extends Controller
     {
         $galleta = Galleta::find($id);
         $galleta->update($request->all());
-        return redirect('/galletas');
+
+        return redirect()->route('galletas.index');
     }
 
     public function destroy($id)
     {
         Galleta::destroy($id);
-        return redirect('/galletas');
+
+        return redirect()->route('galletas.index');
     }
-    
 }

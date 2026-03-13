@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Venta extends Model
 {
+
     protected $fillable = [
         'galleta_id',
         'cantidad',
@@ -18,4 +19,8 @@ class Venta extends Model
     {
         return $this->belongsTo(Galleta::class);
     }
+    public function pagos()
+        {
+        return $this->hasMany(PagoCredito::class);
+        }
 }
